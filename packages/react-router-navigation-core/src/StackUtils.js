@@ -27,31 +27,20 @@ export default {
     location: Location,
     historyIndex?: number,
   ): Location[] {
-    const startHistoryIndex = entries.reduce((acc, entry, index) => {
+    const nextEntries = [];
+
+    for (let i = 0; entries.length; i++) {
+      const entry = entries[i];
+
       if (stack.find(item => matchPath(entry.pathname, item))) {
-        if (acc === -1) {
-          return index
-        }
-        return acc
+        nextEntries.push(entry);
       }
-      if (typeof historyIndex === 'number' && index > historyIndex) {
-        return acc
-      }
-      return -1
-    }, -1)
-    const lastHistoryIndex = entries.reduce((acc, entry, index) => {
-      if (
-        index < startHistoryIndex &&
-        typeof historyIndex === 'number' &&
-        index <= historyIndex
-      ) {
-        return -1
-      }
+
       if (location.pathname === entry.pathname) {
-        return index
+        break;
       }
-      return acc
-    }, -1)
-    return entries.slice(startHistoryIndex, lastHistoryIndex + 1)
+    }
+
+    return nextEntries;
   },
 }
