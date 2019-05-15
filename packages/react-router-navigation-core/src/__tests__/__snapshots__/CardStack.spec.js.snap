@@ -167,9 +167,3 @@ exports[`<CardStack /> should render correctly 1`] = `
   Index
 </Text>
 `;
-
-exports[`<CardStack /> should render correctly with initialIndex and initialEntries props 1`] = `
-<Text>
-  Hello
-</Text>
-`;
