@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Dimensions } from 'react-native'
 import { Route } from 'react-router'
-import { TabStack } from 'react-router-navigation-core'
+import { TabStack } from '@ryverapp/react-router-navigation-core'
 import { PagerPan } from 'react-native-tab-view'
 import DefaultTabsRenderer from './DefaultTabsRenderer'
 import TabBarBottom from './TabBarBottom'

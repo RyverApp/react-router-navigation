@@ -7,7 +7,7 @@ import {
   SceneView,
   TabPropType,
   type RouteProps,
-} from 'react-router-navigation-core'
+} from '@ryverapp/react-router-navigation-core'
 import { type TabOptions } from './TypeDefinitions'
 
 type Props = RouteProps & TabOptions

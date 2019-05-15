@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Platform, BackHandler } from 'react-native'
 import { Route } from 'react-router'
-import { CardStack } from 'react-router-navigation-core'
+import { CardStack } from '@ryverapp/react-router-navigation-core'
 import DefaultNavigationRenderer from './DefaultNavigationRenderer'
 import NavBar from './NavBar'
 import { NavigationPropTypes } from './PropTypes'

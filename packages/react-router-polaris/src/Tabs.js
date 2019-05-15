@@ -3,7 +3,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { Route } from 'react-router'
-import { TabStack } from 'react-router-navigation-core'
+import { TabStack } from '@ryverapp/react-router-navigation-core'
 import DefaultTabsRenderer from './DefaultTabsRenderer'
 
 type Props = {

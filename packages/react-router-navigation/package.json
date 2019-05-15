@@ -30,7 +30,7 @@
   "dependencies": {
     "react-native-tab-view": "1.2.0",
     "react-navigation": "1.5.11",
-    "@ryverapp/react-router-navigation-core": "2.0.0-alpha.10"
+    "@ryverapp/react-router-navigation-core": "file:../react-router-navigation-core"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

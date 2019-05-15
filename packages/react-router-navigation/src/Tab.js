@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Route } from 'react-router'
-import { SceneView } from 'react-router-navigation-core'
+import { SceneView } from '@ryverapp/react-router-navigation-core'
 import { TabPropTypes } from './PropTypes'
 
 export default class Tab extends React.Component {

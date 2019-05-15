@@ -2,7 +2,7 @@ import * as React from 'react'
 import { StyleSheet, Text } from 'react-native'
 import { Route } from 'react-router'
 import { TabBar } from 'react-native-tab-view'
-import { TabStack } from 'react-router-navigation-core'
+import { TabStack } from '@ryverapp/react-router-navigation-core'
 import DefaultTabsRenderer from './DefaultTabsRenderer'
 import { TabsPropTypes } from './PropTypes'
 
