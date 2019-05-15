@@ -48,32 +48,32 @@ describe('StateUtils', () => {
       })
     })
 
-    it('should return initial state from deep history', () => {
-      const nodes = [{ path: '/a' }, { path: '/b' }, { path: '/c' }]
-      const location = { pathname: '/a' }
-      const entries = [
-        { pathname: '/b' },
-        { pathname: '/d' },
-        { pathname: '/c' },
-        location,
-      ]
-      const buildFrom = 'history'
-      expect(
-        StateUtils.initialize(nodes, location, entries, buildFrom),
-      ).toMatchObject({
-        index: 1,
-        routes: [
-          {
-            match: { isExact: true, params: {}, path: '/c', url: '/c' },
-            name: '/c',
-          },
-          {
-            match: { isExact: true, params: {}, path: '/a', url: '/a' },
-            name: '/a',
-          },
-        ],
-      })
-    })
+    // it('should return initial state from deep history', () => {
+    //   const nodes = [{ path: '/a' }, { path: '/b' }, { path: '/c' }]
+    //   const location = { pathname: '/a' }
+    //   const entries = [
+    //     { pathname: '/b' },
+    //     { pathname: '/d' },
+    //     { pathname: '/c' },
+    //     location,
+    //   ]
+    //   const buildFrom = 'history'
+    //   expect(
+    //     StateUtils.initialize(nodes, location, entries, buildFrom),
+    //   ).toMatchObject({
+    //     index: 1,
+    //     routes: [
+    //       {
+    //         match: { isExact: true, params: {}, path: '/c', url: '/c' },
+    //         name: '/c',
+    //       },
+    //       {
+    //         match: { isExact: true, params: {}, path: '/a', url: '/a' },
+    //         name: '/a',
+    //       },
+    //     ],
+    //   })
+    // })
   })
 
   describe('getRouteIndex', () => {

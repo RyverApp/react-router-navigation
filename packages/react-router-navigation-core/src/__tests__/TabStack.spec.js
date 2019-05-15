@@ -104,7 +104,12 @@ describe('<TabStack />', () => {
       routes: [
         {
           name: '/',
-          match: null,
+          match: {
+            isExact: true,
+            params: {},
+            path: "/",
+            url: "/"
+          },
         },
         {
           name: '/hello',

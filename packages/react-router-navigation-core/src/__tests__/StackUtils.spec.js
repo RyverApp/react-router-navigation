@@ -150,9 +150,7 @@ describe('StackUtils', () => {
       expect(
         StackUtils.getHistoryEntries(stack, entries, location),
       ).toMatchObject([
-        { pathname: '/a' },
-        { pathname: '/b' },
-        { pathname: '/a' },
+        { pathname: '/a' }
       ])
     })
 
@@ -172,9 +170,7 @@ describe('StackUtils', () => {
       expect(
         StackUtils.getHistoryEntries(stack, entries, location, index),
       ).toMatchObject([
-        { pathname: '/a' },
-        { pathname: '/b' },
-        { pathname: '/a' },
+        { pathname: '/a' }
       ])
     })
 
@@ -193,7 +189,9 @@ describe('StackUtils', () => {
       const index = 6
       expect(
         StackUtils.getHistoryEntries(stack, entries, location, index),
-      ).toMatchObject([])
+      ).toMatchObject([
+        { pathname: '/a' }
+      ])
     })
   })
 })
