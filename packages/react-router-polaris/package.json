@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@shopify/polaris": "^2.5.0",
-    "@ryverapp/react-router-navigation-core": "2.0.0-alpha.7"
+    "@ryverapp/react-router-navigation-core": "file:../react-router-navigation-core"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

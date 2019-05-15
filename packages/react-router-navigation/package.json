@@ -3,6 +3,7 @@
   "version": "2.0.0-alpha.10",
   "license": "MIT",
   "main": "lib/index.js",
+  "typings": "./index.d.ts",
   "author": "Léo Le Bras <leolebras@wino.fr> (https://github.com/winoteam/)",
   "repository": {
     "type": "git",
@@ -12,7 +13,8 @@
     "build": "yarn build:cjs && yarn build:flow",
     "build:watch": "babel -d ./lib ./src/ --ignore __tests__ --watch",
     "build:cjs": "babel -d ./lib ./src/ --ignore __tests__",
-    "build:flow": "for file in $(find ./src -name '*.js' -not -path '*/__tests__*'); do cp \"$file\" `echo \"$file\" | sed 's/\\/src\\//\\/lib\\//g'`.flow; done"
+    "build:flow": "for file in $(find ./src -name '*.js' -not -path '*/__tests__*'); do cp \"$file\" `echo \"$file\" | sed 's/\\/src\\//\\/lib\\//g'`.flow; done",
+    "build:dts": "tsc --allowJs --emitDeclarationOnly --outDir ./lib"
   },
   "keywords": [
     "react-native",
@@ -28,9 +30,9 @@
     "react-router": "4.2.x"
   },
   "dependencies": {
+    "@ryverapp/react-router-navigation-core": "file:../react-router-navigation-core",
     "react-native-tab-view": "1.2.0",
-    "react-navigation": "1.5.11",
-    "@ryverapp/react-router-navigation-core": "file:../react-router-navigation-core"
+    "react-navigation": "1.5.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

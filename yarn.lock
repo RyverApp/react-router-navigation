@@ -645,6 +645,13 @@
     pouchdb-collections "^1.0.1"
     tiny-queue "^0.2.1"
 
+"@ryverapp/react-router-navigation-core@file:packages/react-router-navigation-core":
+  version "2.0.0-alpha.10"
+  dependencies:
+    fbjs "0.8.17"
+    invariant "^2.2.4"
+    iterall "^1.2.2"
+
 "@segment/loosely-validate-event@^1.1.2":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@segment/loosely-validate-event/-/loosely-validate-event-1.1.2.tgz#d77840999e3f7e43e74b3b0d43391c1526f793b8"
@@ -10630,6 +10637,14 @@ react-router-navigation@2.0.0-alpha.7:
   dependencies:
     react-native-tab-view "1.2.0"
     react-navigation "1.5.11"
+    react-router-navigation-core "2.0.0-alpha.7"
+
+react-router-polaris@0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npmjs.org/react-router-polaris/-/react-router-polaris-0.1.3.tgz#85697e28a7a0bcbb7ca7b83b4cbace30b1223b17"
+  integrity sha512-Pdmp2XL/4NI3Qc0TKGVVA6w5HPHb4NYuEKa5V+85KBYYXf3re9Nk4loEgMxjjVJ/AtOSvhXu0Dunsur5xLfAKw==
+  dependencies:
+    "@shopify/polaris" "^2.5.0"
     react-router-navigation-core "2.0.0-alpha.7"
 
 react-router-redux@5.0.0-alpha.9:
