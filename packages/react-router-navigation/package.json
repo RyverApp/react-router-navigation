@@ -13,8 +13,7 @@
     "build": "yarn build:cjs && yarn build:flow",
     "build:watch": "babel -d ./lib ./src/ --ignore __tests__ --watch",
     "build:cjs": "babel -d ./lib ./src/ --ignore __tests__",
-    "build:flow": "for file in $(find ./src -name '*.js' -not -path '*/__tests__*'); do cp \"$file\" `echo \"$file\" | sed 's/\\/src\\//\\/lib\\//g'`.flow; done",
-    "build:dts": "tsc --allowJs --emitDeclarationOnly --outDir ./lib"
+    "build:flow": "for file in $(find ./src -name '*.js' -not -path '*/__tests__*'); do cp \"$file\" `echo \"$file\" | sed 's/\\/src\\//\\/lib\\//g'`.flow; done"
   },
   "keywords": [
     "react-native",
